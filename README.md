@@ -1,17 +1,8 @@
 # Repository Transition
 
-This repository was previously used to store multiple projects in a single repository. However, due to F&C requirements, I have made the decision to create separate repositories for each project. 
+TThis is a new repository created specifically for the Founders & Coders to submit application. It does not have any commit history because the project was previously stored in a single repository along with other projects.
 
-### Repository Structure
-The new structure of the repositories is as follows:
-
-- Project 1: https://github.com/MarikaBBB/hobby-page 
-- Project 2: https://github.com/MarikaBBB/gallery-project 
-- Project 3: https://github.com/MarikaBBB/movie-database 
-- Project 4: https://github.com/MarikaBBB/game 
-- Project 5: https://github.com/MarikaBBB/website
-
-Each project now has its own dedicated repository, which contains all the relevant files.
+To access the full commit history and development progress, please refer to the https://github.com/MarikaBBB/MarikaBBB.github.io repository.
 
 
 
