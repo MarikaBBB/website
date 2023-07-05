@@ -283,16 +283,16 @@ flagIcons.forEach(function(flagIcon) {
   });
 });
 
-// JavaScript code
+
 // Check if the current device is a mobile phone
 function isMobileDevice() {
-  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  return /Mobi|Android/i.test(navigator.userAgent);
 }
 
 // Add a click event listener to the speech bubble for mobile devices
 if (isMobileDevice()) {
   var speechBubble1 = document.getElementById('speech-bubble1');
-  speechBubble1.addEventListener('click', function() {
+  speechBubble1.addEventListener('touchstart', function() {
    
     var avatar1 = document.getElementById('avatar1');
     var avatar2 = document.getElementById('avatar2');
