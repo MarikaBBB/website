@@ -868,41 +868,41 @@ p {
     padding: 20px 0;
   }
 
-  /* Adjust the avatar container */
-  #avatar-container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%; /* Adjust the width as needed */
-    text-align: center;
-  }
+ /* Adjust the avatar container */
+ #avatar-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; 
+  text-align: center;
+}
 
-  /* Adjust the avatar images */
-  #avatar1,
-  #avatar2,
-  #avatar3 {
-    width: 100%; /* Adjust the width as needed */
-    height: auto;
-    cursor: pointer;
-  }
+/* Adjust the avatar images */
+#avatar1,
+#avatar2,
+#avatar3 {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
 
-  .clickable {
-    cursor: pointer;
-  }
-  
-  .hidden {
-    display: none;
-  }
+.clickable {
+  cursor: pointer;
+}
 
-  /* Adjust speech bubble 1 */
-  #speech-bubble1 {
-    position: relative;
-    top: 20px;
-    left: 0;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 50%;
-    width: 60%; 
-  }
+.hidden {
+  display: none;
+}
+
+/* Adjust speech bubble 1 */
+#speech-bubble1 {
+  position: relative;
+  top: 20px;
+  left: 0;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 50%;
+  width: 60%; 
+
 
   /* Adjust speech bubble 2 */
   #speech-bubble2 {
@@ -938,7 +938,7 @@ p {
     max-width: 150px;
   }
 
-/* Pop-up windows style */
+ /* Pop-up windows style */
 #popup-container {
   width: 90%; 
   height: auto;
