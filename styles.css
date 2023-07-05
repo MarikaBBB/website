@@ -885,6 +885,14 @@ p {
     cursor: pointer;
   }
 
+  .clickable {
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
   /* Adjust speech bubble 1 */
   #speech-bubble1 {
     position: relative;

@@ -282,3 +282,28 @@ flagIcons.forEach(function(flagIcon) {
     openPopup(country); // Open the selected pop-up window
   });
 });
+
+// JavaScript code
+// Check if the current device is a mobile phone
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+// Add a click event listener to the speech bubble for mobile devices
+if (isMobileDevice()) {
+  var speechBubble1 = document.getElementById('speech-bubble1');
+  speechBubble1.addEventListener('click', function() {
+  
+    var avatar1 = document.getElementById('avatar1');
+    var avatar2 = document.getElementById('avatar2');
+    var avatar3 = document.getElementById('avatar3');
+    
+    avatar1.classList.add('hidden');
+    avatar2.classList.remove('hidden');
+    
+    setTimeout(function() {
+      avatar2.classList.add('hidden');
+      avatar3.classList.remove('hidden');
+    }, 500);
+  });
+}
