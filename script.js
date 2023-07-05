@@ -293,7 +293,7 @@ function isMobileDevice() {
 if (isMobileDevice()) {
   var speechBubble1 = document.getElementById('speech-bubble1');
   speechBubble1.addEventListener('click', function() {
-  
+   
     var avatar1 = document.getElementById('avatar1');
     var avatar2 = document.getElementById('avatar2');
     var avatar3 = document.getElementById('avatar3');
