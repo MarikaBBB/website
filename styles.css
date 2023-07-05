@@ -1,8 +1,8 @@
+/* Global styles */
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Reset default margin */
 body {
   margin: 0;
   scroll-behavior: smooth;
@@ -12,18 +12,15 @@ body {
 
 /* Header and Title Section */
 .topnav {
-  /* Background gradient */
   background-image: linear-gradient(to top, #237f5e 100%, #08452c 0%);
   padding: 10px;
-  margin: 0;
 }
 
 .topnav a {
-  /* Navigation links styling */
   font-size: 22px;
   font-weight: bold;
   color: #feffff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px #070708;
   padding: 10px;
   border-radius: 5px;
 }
@@ -33,14 +30,11 @@ body {
 }
 
 #title-section {
-  /* Title section styling */
   background-image: linear-gradient(to top, #08452c 0%, #237f5e 100%);
   margin: 0;
   padding: 180px; /* Increase the padding to make the section taller */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Move the title to the right side */
-  align-items: flex-start; /* Center the content vertically */
 }
 
 /* Main title styling */
@@ -75,7 +69,6 @@ body {
 @keyframes slideIn {
   from {
     transform: translateX(100%);
-    opacity: 0;
   }
   to {
     transform: translateX(0);
@@ -93,6 +86,423 @@ body {
   color: #08452c;
 }
 
+/* About section styling */
+#about-section {
+ background: linear-gradient(to right, rgba(255, 159, 169, 1) 0%, rgba(255, 212, 216) 60%);
+ display: flex;
+ flex-direction: column;
+}
+
+/* Styles for the avatar container */
+#avatar-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  text-align: center; 
+}
+
+/* Styles for the avatar images */
+#avatar1,
+#avatar2,
+#avatar3 {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+#avatar2 {
+  animation: leg-animation 2s infinite;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+#avatar3 {
+  animation: hand-animation 2s infinite;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes leg-animation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes hand-animation {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Hidden class to hide elements */
+.hidden {
+  display: none;
+}
+
+/* Animation class for avatar */
+animate {
+  animation: avatarAnimation 1s infinite alternate;
+}
+
+@keyframes avatarAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+/* Styles for speech bubble 1 */
+#speech-bubble1 {
+  position: absolute;
+  top: 30px;
+  left: 260px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 100px;
+  box-shadow: 0 2px 4px #070708;
+}
+
+#speech-bubble1:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #ffffff;
+  border-bottom: 10px solid transparent;
+  border-radius: 10px;
+}
+
+/* Styles for speech bubble 2 */
+#speech-bubble2 {
+  position: absolute;
+  top: 150px;
+  left: 260px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 250px;
+  height: 180px;
+  box-shadow: 0 2px 4px #070708;
+}
+
+/* Styles for text inside speech bubbles */
+#speech-bubble1 p,
+#speech-bubble2 p {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #08452c;
+}
+
+/* Styles for hidden elements */
+.hidden {
+  display: none;
+}
+
+/* Start story button */
+#start-story-btn {
+  padding: 15px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #08452c;
+  background-color: #ffbfc1;
+  border: 1px solid #070708;
+  border-radius: 4px;
+  cursor: pointer;
+  height: auto;
+  width: 200px;
+  margin-top: 80px;
+  margin-right: 35px;
+  margin-left: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Image map section */
+#image-map-section {
+  background: linear-gradient(to right, rgba(255, 159, 169, 1) 0%, rgba(255, 212, 216) 60%);
+}
+
+#image-map-container {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#image-map-container img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.map-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-box {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px #070708;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, top 0.3s, visibility 0.3s;
+}
+
+.flag-icon {
+  position: absolute;
+  cursor: pointer;
+}
+
+.flag-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.number-circle {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  /* left: 5%; */
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+}
+
+.emoji {
+  margin-left: 5px; /* Adjust the spacing between the number and emoji */
+  font-size: 32px;
+}
+
+.flag-icon .emoji.selected {
+  box-shadow: 0 0 0 2px blue inset;
+}
+
+/* Adjust the styles of the flag icons */
+.flag-icon[data-country="Italy"] {
+  left: 48.9%;
+  top: 25.8%;
+}
+
+.flag-icon[data-country="Spain"] {
+  top: 30%;
+  left: 45.5%;
+  transform: translate(-50%, -50%);
+}
+
+.flag-icon[data-country="Japan"] {
+  top: 33%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+}
+
+.flag-icon[data-country="Japan"] .number-circle {
+  left: 29px;
+  margin-top: 3px;
+}
+
+.flag-icon[data-country="Japan"] .emoji {
+  margin-left: 34px; 
+}
+
+.flag-icon[data-country="England"] {
+  top: 22%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+
+.flag-icon[data-country="England"] .number-circle {
+  left: 29px;
+  margin-top: 5px;
+}
+
+.flag-icon[data-country="England"] .emoji {
+  margin-left: 34px; 
+}
+
+.flag-icon[data-country="England2"] {
+  top: 16.8%;
+  left: 45.4%;
+  transform: translate(-50%, -50%);
+}
+
+.flag-icon[data-country="England2"] .number-circle {
+  left: 28px; 
+  margin-top: 40px;
+}
+
+.flag-icon[data-country="England2"] .emoji {
+  margin-right: 35px; 
+}
+
+/* Styles for popup window */
+.fixed-popup {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  z-index: 9999;
+}
+
+.popup {
+  display: none;
+  width: 650px;
+  height: 400px;
+  position: absolute;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  text-align: justify;
+}
+
+.popup h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup h2,
+.popup p,
+.popup .close {
+  color: #08452c;
+}
+
+.ita {
+  padding-bottom: 45px;
+}
+
+/* Close button style */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.nextButtonsPopup {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 10px;
+  color: #08452c;
+  background-color: #ffbfc1;
+  border: 1px solid #070708;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.photo-container {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  margin-bottom: 20px; 
+}
+
+.photo-container img {
+  width: 100px; 
+  height: auto;
+}
+
+#photo1 {
+  float: left; /* Position photo 1 to the left */
+  margin-right: 10px; /* Add some right margin for spacing */
+  width: 90px;
+}
+
+#photo2 {
+  float: right; /* Position photo 2 to the right */
+  margin-right: 10px; /* Add some left margin for spacing */
+  width: 90px;
+  margin-left: 10px;
+}
+
+.photoStory {
+  float: left;
+  margin-right: 10px;
+  width: 180px;
+  height: 100px;
+}  
+
+.founders {
+  float: left;
+  margin-right: 10px;
+}
+
+.london {
+    margin-top: 30px;
+}
+
+.popup-text {
+  margin-top: 10px;
+}
+
+.coders {
+  margin-bottom: 10px;
+}
+
+.nextButtonsPopup {
+  margin-top: 10px;
+}
+
 /* Carousel Section */
 #learning-journey {
   background-color: #196B4B;
@@ -101,7 +511,6 @@ body {
   margin: 0;
   font-size: 20px;
   color: white;
-  box-shadow: 0 -3px 3px -2px rgba(0, 0, 0, 0.5);
 }
 
 /* Carousel container styling */
@@ -115,8 +524,8 @@ body {
 .carousel-wrapper {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: calc(100% * 6); /* Adjust the width based on the number of projects */
-  transform: translateX(-100%); /* Adjust the translation based on the number of projects */
+  width: calc(100% * 6); /*Adjust the width based on the number of projects  */
+  transform: translateX(-100%); /*Adjust the translation based on the number of projects  */
 }
 
 .carousel .project-container:last-child {
@@ -194,31 +603,24 @@ body {
 
 .container-content h4 {
   margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
   text-align: center;
   color: whitesmoke; 
 }
 
 /* Arrow button styling */
 .box-image {
-  position: relative;
   margin-bottom: -10px;
   margin-top: 10px;
   padding-top: 5px;
-  /* padding-bottom: 5px; */
+  position: relative;
 }
 
- /* Paragraph styling */
 p {
   margin: 0;
 }
 
 /* Project container box image styling */
 .project-container .box-image {
-  position: relative;
   overflow: hidden;
   height: 160px;
 }
@@ -226,9 +628,9 @@ p {
  /* Project container box image styling */
 .project-container .box-image img {
   width: 100%;
-  height: 90%;
+  height: 91%;
   object-fit: cover;
-  border: 1px solid black;
+  border: 1px solid #070708;
 }
 
 .project-container .overlay {
@@ -236,7 +638,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 91%;
+  height: 92%;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   display: flex;
@@ -274,7 +676,6 @@ p {
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
   padding-top: 5px;
-  margin-bottom: 0;
 }
 
 .github-logo:hover {
@@ -300,14 +701,14 @@ p {
 }
 
 
- /* Project container box image styling */
+/* Project container box image styling */
 .topnav a,
 .container-content a {
   text-decoration: none;
 }
 
- /* Testimonials section styling */
- #testimonials {
+/* Testimonials section styling */
+#testimonials {
   display: flex;
   margin: 0;
   padding: 10px 60px;
@@ -341,7 +742,6 @@ p {
   margin: 0;
   font-size: 16px;
   margin-bottom: 10px;
-  /*font-weight: bold;*/
 }
 
 .testimonial .testimonial-content p {
@@ -351,21 +751,31 @@ p {
   padding-top: 10px;
 }
 
-/* Footer styling */
+/* Footer content styling */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-section {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Contact section styling */
 #contact {
   background-image: linear-gradient(to top, #08452c 0%, #237f5e 100%);
   margin: 0;
   padding: 10px;
-  display: flex;
   flex-direction: column;
   color: white;
   align-items: center;
   text-align: center;
 }
 
-  /* Contact section styling */
 .contact-section {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -376,21 +786,8 @@ p {
   margin-right: 10px;
 }
 
- /* Footer content styling */
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.left-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
- /* Feedback section styling */
+/* Feedback section styling */
 .feedback-text {
   white-space: pre-line;
   font-size: 22px;
@@ -436,431 +833,11 @@ p {
 }
 
 .right-section {
-  color: white;
-  text-align: right;
-  font-size: 16px;
   align-self: flex-end;
+  text-align: right;
 }
 
 
- /* About section styling */
-#about-section {
-  background: linear-gradient(to right, rgba(255, 159, 169, 1) 0%, rgba(255, 212, 216) 60%);
- margin: 0;
- padding: 10px;
- display: flex;
- flex-direction: column;
-}
-
-/* Styles for the avatar container */
-#avatar-container {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 350px;
-  text-align: center; 
-}
-
- /* Styles for the avatar images */
-#avatar1,
-#avatar2,
-#avatar3 {
-  width: 300px;
-  height: auto;
-  cursor: pointer;
-}
-
-#avatar2 {
-  animation: leg-animation 2s infinite;
-  animation-delay: 1s;
-  animation-timing-function: ease-in-out;
-}
-
-#avatar3 {
-  animation: hand-animation 2s infinite;
-  animation-delay: 2s;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes leg-animation {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-10px);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  75% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes hand-animation {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-10px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Hidden class to hide elements */
-.hidden {
-  display: none;
-}
-
- /* Animation class for avatar */
-animate {
-  animation: avatarAnimation 1s infinite alternate;
-}
-
-@keyframes avatarAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(10px);
-  }
-}
-
-/* Styles for speech bubble 1 */
-#speech-bubble1 {
-  position: absolute;
-  top: 30px;
-  left: 260px;
-  padding: 10px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  width: 100px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#speech-bubble1:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-right: 10px solid #ffffff;
-  border-bottom: 10px solid transparent;
-  border-radius: 10px;
-}
-
-/* Styles for speech bubble 2 */
-#speech-bubble2 {
-  position: absolute;
-  top: 150px;
-  left: 260px;
-  padding: 10px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  width: 250px;
-  height: 180px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Styles for text inside speech bubbles */
-#speech-bubble1 p,
-#speech-bubble2 p {
-  margin: 0;
-  font-size: 16px;
-  text-align: center;
-  font-weight: bold;
-  color: #08452c;
-}
-
-.hidden {
-  display: none;
-}
-
-
-#start-story-btn {
-  padding: 15px 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #08452c;
-  background-color: #ffbfc1;
-  border: 1px solid black;
-  border-radius: 4px;
-  cursor: pointer;
-  height: auto;
-  width: 200px;
-  margin-top: 80px;
-  margin-right: 35px;
-  margin-left: 25px;
-  text-align: center;
-  cursor: pointer;
-}
-
-#image-map-section {
-  background: linear-gradient(to right, rgba(255, 159, 169, 1) 0%, rgba(255, 212, 216) 60%);
-}
-
-#image-map-container {
-  position: relative;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-#image-map-container img {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-}
-
-.map-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.hover-box {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 200px;
-  padding: 10px;
-  background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, top 0.3s, visibility 0.3s;
-}
-
-.flag-icon {
-  position: absolute;
-  cursor: pointer;
-}
-
-.flag-content {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.number-circle {
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
-  left: 5%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: white;
-  border: 1px solid black;
-  font-weight: bold;
-  color: black;
-  font-size: 12px;
-  /* padding: 0;
-  margin: 0; */
-}
-
-.emoji {
-  margin-left: 5px; /* Adjust the spacing between the number and emoji */
-  font-size: 32px;
-}
-
-.flag-icon .emoji.selected {
-  box-shadow: 0 0 0 2px blue inset;
-}
-
-/* Adjust the styles of the flag icons as needed */
-.flag-icon[data-country="Italy"] {
-  left: 48.9%;
-  top: 25.8%;
-}
-
-.flag-icon[data-country="Spain"] {
-  top: 30%;
-  left: 45.5%;
-  transform: translate(-50%, -50%);
-}
-
-.flag-icon[data-country="Japan"] {
-  top: 33%;
-  left: 89%;
-  transform: translate(-50%, -50%);
-}
-
-.flag-icon[data-country="Japan"] .number-circle {
-  left: 29px;
-  margin-top: 25px;
-}
-
-.flag-icon[data-country="Japan"] .emoji {
-  margin-left: 34px; 
-}
-
-.flag-icon[data-country="England"] {
-  top: 22%;
-  left: 46%;
-  transform: translate(-50%, -50%);
-}
-
-.flag-icon[data-country="England"] .number-circle {
-  left: 29px;
-  margin-top: 25px;
-}
-
-.flag-icon[data-country="England"] .emoji {
-  margin-left: 34px; 
-}
-
-.flag-icon[data-country="England2"] {
-  top: 16.8%;
-  left: 45.4%;
-  transform: translate(-50%, -50%);
-}
-
-.flag-icon[data-country="England2"] .number-circle {
-  left: 28px; 
-  margin-top: 50px;
-}
-
-.flag-icon[data-country="England2"] .emoji {
-  margin-right: 35px; 
-}
-
-/* Styles for popup window */
-.fixed-popup {
-  position: absolute;
-  top: 35%;
-  left: 20%;
-  z-index: 9999;
-}
-
-.popup {
-  display: none;
-  width: 650px;
-  height: 400px;
-  position: absolute;
-  padding: 20px;
-  background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 2;
-  text-align: justify;
-}
-
-.popup h2 {
-  margin-top: 0;
-  text-align: center;
-}
-
-.popup.show {
-  display: block;
-}
-
-.popup h2,
-.popup p,
-.popup .close {
-  color: #08452c;
-}
-
-.ita {
-  padding-bottom: 45px;
-}
-
-/* Close button style */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.nextButtonsPopup {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 30px;
-  padding: 10px 10px;
-  color: #08452c;
-  background-color: #ffbfc1;
-  border: 1px solid black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.photo-container {
-  display: flex;
-  align-items: center; /* Center the items vertically */
-  margin-bottom: 20px; 
-}
-
-.photo-container img {
-  width: 100px; 
-  height: auto;
-}
-
-#photo1 {
-  float: left; /* Position photo 1 to the left */
-  margin-right: 10px; /* Add some right margin for spacing */
-  width: 90px;
-}
-
-#photo2 {
-  float: right; /* Position photo 2 to the right */
-  margin-right: 10px; /* Add some left margin for spacing */
-  width: 90px;
-  margin-left: 10px;
-}
-
-.photoStory {
-  float: left;
-  margin-right: 10px;
-  width: 180px;
-  height: 100px;
-}  
-
-.founders {
-  float: left;
-  margin-right: 10px;
-}
-
-.london {
-    margin-top: 30px;
-}
-
-.popup-text {
-  margin-top: 10px;
-}
-
-.coders {
-  margin-bottom: 10px;
-}
-
-.nextButtonsPopup {
-  margin-top: 10px;
-}
 
 
 /* Mobile Portrait */

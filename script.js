@@ -6,12 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.add('hovered');
   }
 
-  // Function to handle mouseleave event on topnav buttons
   function handleMouseLeave() {
     this.classList.remove('hovered');
   }
 
-  // Attach mouseenter and mouseleave event listeners to topnav buttons
   navLinks.forEach(link => {
     link.addEventListener('mouseenter', handleMouseEnter);
     link.addEventListener('mouseleave', handleMouseLeave);
@@ -118,7 +116,6 @@ avatar.addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Get the position of the About Me section
   const aboutSection = document.getElementById("about-section");
   const aboutSectionTop = aboutSection.offsetTop;
 
@@ -158,14 +155,10 @@ function openPopup(country) {
 
   // Get the flag icon element corresponding to the country
   const flagIcon = document.querySelector(`.flag-icon[data-country="${country}"] .emoji`);
-
-  // Add the "selected" class to the flag icon
   flagIcon.classList.add('selected');
 
   // Get the close button within the popup
   const closeButton = popup.querySelector('.close');
-
-  // Add event listener to the close button
   closeButton.addEventListener('click', function() {
     closePopup();
   });
@@ -175,10 +168,7 @@ function openPopup(country) {
 function closePopup() {
   const openPopup = document.querySelector('.popup.show');
   if (openPopup) {
-    // Get the country associated with the open popup
     const country = openPopup.getAttribute('data-country');
-
-    // Remove the "selected" class from the flag icon
     const flagIcon = document.querySelector(`.flag-icon[data-country="${country}"] .emoji`);
     if (flagIcon) {
       flagIcon.classList.remove('selected');
@@ -194,8 +184,6 @@ function closePopup() {
 
 // Get all the popup windows
 const popups = document.querySelectorAll('.popup');
-
-// Initialize the current popup index
 let currentPopupIndex = 0;
 
 // Function to show a popup window
@@ -217,8 +205,6 @@ function hidePopup(index) {
 // Function to show the next popup
 function showNextPopup() {
   hidePopup(currentPopupIndex); // Hide the current popup
-
-  // Move to the next popup
   currentPopupIndex++;
   if (currentPopupIndex >= popups.length) {
     currentPopupIndex = 0;
@@ -236,21 +222,18 @@ function showNextPopup() {
   const currentPopup = popups[currentPopupIndex];
   const country = currentPopup.getAttribute('data-country');
   const flagIcon = document.querySelector(`.flag-icon[data-country="${country}"] .emoji`);
-
-  // Add the "selected" class to the flag icon of the current popup
   flagIcon.classList.add('selected');
 }
 
 // Event listeners to the flag icons
 const flagIcons = document.querySelectorAll('.flag-icon');
+
 flagIcons.forEach(function(flagIcon) {
   flagIcon.addEventListener('click', function() {
     const country = this.getAttribute('data-country');
     closePopup(); // Close any open pop-up windows
     openPopup(country); // Open the selected pop-up window
     removeSelectedClass(); // Remove "selected" class from all flag icons
-
-    // Add the "selected" class to the clicked flag icon
     const emojiElement = this.querySelector('.emoji');
     emojiElement.classList.add('selected');
   });
@@ -258,9 +241,8 @@ flagIcons.forEach(function(flagIcon) {
 
 // Get all the next buttons for pop-ups
 const nextButtonsPopup = document.querySelectorAll('.nextButtonsPopup');
-
-// Add event listeners to close buttons in pop-up windows
 const closeButtons = document.querySelectorAll('.popup .close');
+
 closeButtons.forEach(function(closeButton) {
   closeButton.addEventListener('click', function() {
     const popup = this.parentNode;
@@ -300,25 +282,3 @@ flagIcons.forEach(function(flagIcon) {
     openPopup(country); // Open the selected pop-up window
   });
 });
-
-
-// Add event listeners to close buttons in pop-up windows
-closeButtons.forEach(function (closeButton) {
-  closeButton.addEventListener('click', function () {
-    const popup = this.parentNode;
-    hidePopup(Array.from(popups).indexOf(popup)); // Close the current pop-up window
-  });
-});
-
-// Add event listeners to the pop-up next buttons
-nextButtonsPopup.forEach((button, index) => {
-  button.addEventListener('click', showNextPopup);
-});
-
-// // Disable horizontal scrolling
-// window.addEventListener('scroll', function(event) {
-//   if (window.innerWidth < document.documentElement.scrollWidth) {
-//     event.preventDefault();
-//     window.scroll(window.scrollX, 0);
-//   }
-// });
