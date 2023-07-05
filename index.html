@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Marika's Founders & Coders Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="My web page is a playground for me to learn about web concepts">
+</head>
+<body>
+  <!-- Header Section -->
+  <nav class="topnav">
+    <a href="#about-section" class="nav-link">About Me</a>
+    <a href="#learning-journey" class="nav-link">Projects</a>
+    <a href="#testimonials" class="nav-link">Testimonials</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <!-- End of Header Section -->
+
+  <!-- Title Section -->
+  <section id="title-section">
+    <h1>Welcome!</h1>
+    <br>
+    <h2>Marika's Founders &amp; Coders Application</h2>
+    <blockquote class="quote-container">
+      <q class="quoteB"><em>Success is the sum of small efforts - repeated day in and day out.</em></q>
+      <p class="quoteB">- Robert Collier</p>
+    </blockquote>
+  </section>
+  <!-- End of Title Section -->
+
+  <!-- About Me Section -->
+  <section id="about-section">
+    <h2 class="titleH2">About Me</h2>
+    <div id="avatar-container">
+      <img id="avatar1" src="avatar-marika-stand.png" alt="My Avatar">
+      <img id="avatar2" src="avatar-marika-step.png" alt="My Avatar Leg Forward" class="hidden">
+      <img id="avatar3" src="avatar-marika-wave.png" alt="My Avatar Hand Up" class="hidden">
+      <div id="speech-bubble1">
+        <p>Click on me</p>
+      </div>
+      <div id="speech-bubble2" class="hidden">
+        <p>Hello!</p> 
+        <br>
+        <p>Are you ready to discover more about me?</p>
+        <br>
+        <p>Please click the button below.</p>
+        <br>
+        <button id="start-story-btn">Start My Story</button>
+      </div>     
+    </div>
+  </section>
+<!-- End of About Me Section -->
+
+<!-- Image Map Section -->
+<section id="image-map-section">
+  <div id="image-map-container">
+    <div class="map-wrapper">
+      <img src="Map.jpg" alt="Image Map" usemap="#flags-map">
+    </div>
+    <map name="flags-map">
+      <area shape="rect" coords="978, 321, 1028, 371" alt="Italy" data-country="Italy">
+      <area shape="rect" coords="903, 261, 953, 311" alt="England" data-country="England">
+      <area shape="rect" coords="873, 342, 923, 392" alt="Spain" data-country="Spain">
+      <area shape="rect" coords="1779, 381, 1829, 431" alt="Japan" data-country="Japan">
+      <area shape="rect" coords="903, 261, 953, 311" alt="England2" data-country="England2">
+    </map>
+    <!-- Popup Windows -->
+<div id="popup-container" class="fixed-popup">
+  <div class="popup italy-popup" data-country="Italy">
+    <h2>1. Italy</h2>
+    <div class="photo-container">
+      <img id="photo1" src="baby.jpeg" alt="Photo 1">
+      <p class="ita">Hello there! I'm Marika Bertelli, born and raised in the charming city of Treviso, often referred to as <em>"little Venice"</em> and renowned as the land of Prosecco.</p> 
+    </div>
+      <img id="photo2" src="sarmede.jpeg" alt="Photo 2"> 
+      <p>My passion for art, particularly Modern and Contemporary Art, led me to pursue studies in painting  <span>&#x1F3A8;</span> at the Academy of Art in Venice and a Master's Degree in History of Art at the University of Padua. <br>
+      For a few years, I managed my own Wordpress blog called <a href="https://wanderthroughculture.wordpress.com">Wander Through Culture</a>, where I documented my visits to exhibitions and heritage sites.</p>
+    <span class="close">×</span>
+    <button class="nextButtonsPopup">NEXT</button>
+  </div>
+
+  <div class="popup" data-country="Spain">
+    <h2>2. Spain</h2>
+    <img class="photoStory" src="camino.jpg" alt="Photo Spain">
+    <p>A fun fact about me is that I did the Camino de Santiago, a famous pilgrimage route in Europe also known as the Way of Saint James. I chose the popular Camino Francés, which starts in Saint-Jean-Pied-de-Port, France, and goes for about 780 kilometers (485 miles) to Santiago de Compostela.</p>
+    <br>
+    <br>
+    <p>It was my first time doing it alone, and I made a mistake of carrying a backpack that was too heavy. Along the way, I ended up donating many of my belongings. This experience taught me the importance of letting go of things and focusing on what truly matters in the journey. It also taught me resilience and adaptability, skills that are valuable in everyday life.</p>
+    <span class="close">×</span>
+    <button class="nextButtonsPopup">NEXT</button>
+  </div>
+
+  <div class="popup" data-country="England">
+    <h2>3. England</h2>
+    <img class="photoStory" src="London.jpg" alt="Photo London">
+    <p>In 2015, I moved to the UK with limited English skills. Initially worked in hospitality, later transitioned to the museum sector. Currently, I'm a Visitor Service Supervisor at the Museum of Freemasonry, managing a team of five staff members and overseeing our tours.</p>
+    <br>
+    <p>I excel in research, storytelling and providing excellent customer service. Adept at working as part of a team to meet deadlines.</p>
+    <br>
+    <p>The pandemic posed challenges at my workplace, particularly digital engagement and accessibility. This situation sparked a strong interest in digital platforms for me. I saw how they bring people together, transcending physical limitations, and offer easy access to information and services from anywhere. I find it truly fascinating how digital platforms can connect us and bridge gaps.</p>
+    <span class="close">×</span>
+    <button class="nextButtonsPopup London">NEXT</button>
+  </div>
+
+  <div class="popup" data-country="Japan">
+    <h2>4. Japan</h2>
+    <img class="photoStory" src="Tokyo.jpg" alt="Photo Tokyo">
+    <p>During my visit to Japan to see a close friend, I was amazed by Tokyo's efficient and clean public service, which was largely supported by technology. Our conversations about the city's lack of information on public art trails sparked an exciting idea: creating an app that would showcase Tokyo's hidden art gems and offer guided trails for art enthusiasts to explore.<p>
+      <br>
+    <p>This idea has ignited my motivation to learn coding, with the goal of one day turning this concept into a reality.</p>
+    <span class="close">×</span>
+    <button class="nextButtonsPopup">NEXT</button>
+  </div>
+
+  <div class="popup" data-country="England2">
+    <h2>5. Why do I want to apply to Founders & Coders?</h2>
+    <img class="photoStory founders" src="founders-and-coders.jpeg" alt="Photo course">
+    <p class="popup-text"> After my trip to Japan, a friend suggested I try an online course in back-end development. It was tough but exciting, giving me a taste of coding. Wanting a career in web development, I work on the full-stack web development path through the Oding Project.</p>
+    <br>
+    <p class="popup-text coders">I attended a workshop called Beginners Coding for Community Organising at 4Space, where I met someone from Founders & Coders. </p>
+    <p class="popup-text coders">Founders & Coders stands out with its clear vision for industry transformation through community, inclusion, and collaborative learning. I love FAC emphasis on in-person collaboration, which sets them apart from remote-focused bootcamps. I enjoyed working with other applicants during F&C's meet-ups, now eager to join FAC Skills Bootcamp. I fully committed to completing a Software Apprenticeship with F&C help.</p>
+    <span class="close">×</span>
+    <button class="nextButtonsPopup">NEXT</button>
+  </div>
+</div>
+<!-- End of Popup Windows -->
+<div class="flag-icon italy" data-country="Italy">
+  <div class="flag-content">
+    <div class="number-circle">1</div>
+    <span class="emoji">🇮🇹</span>
+  </div>
+</div>
+
+<div class="flag-icon spain" data-country="Spain">
+  <div class="flag-content">
+    <div class="emoji">🇪🇸</div>
+  </div>
+  <div class="number-circle">2</div>
+</div>
+
+<div class="flag-icon england" data-country="England">
+  <div class="flag-content">
+    <div class="number-circle">3</div>
+  </div>
+  <div class="emoji">🇬🇧</div>
+</div>
+
+<div class="flag-icon japan" data-country="Japan">
+  <div class="flag-content">
+    <div class="number-circle number">4</div>
+  </div>
+  <div class="emoji">🇯🇵</div>
+</div>
+
+<div class="flag-icon computer" data-country="England2">
+  <div class="flag-content">
+    <div class="number-circle">5</div>
+  </div>
+  <div class="emoji">💻</div>
+</div>
+</div>
+
+  <!-- Hover Box -->
+<div class="hover-box">
+  <div id="location-title"></div>
+  <div id="location-description"></div>
+</div>
+</div>
+</section>
+<!-- End of Image Map Section -->
+</section>
+
+
+<!-- Section Title -->
+<section id="learning-journey">
+  <h2>My Learning Journey Through Challenges and Projects</h2>
+</section>
+
+<!-- Carousel Section -->
+<section id="project-sections-carousel">
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-wrapper">
+      <div class="project-sections">
+        <div class="project-container">
+          <div class="container-content">
+            <h4>Practice JavaScript</h4>
+            <div class="box-image">
+              <img src="./projects-images/codewars.png" alt="Codewars logo for practicing JavaScript" class="image">
+              <div class="overlay">
+                <a href="https://www.codewars.com/users/MarrrB">Visit my CODEWARS profile</a>
+              </div>
+            </div>
+            <p class="github-link wars">Reached 6Kyu!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-sections">
+        <div class="project-container">
+          <div class="container-content">
+            <h4>Website</h4>
+            <div class="box-image">
+              <img src="./projects-images/website.jpeg" alt="Photo of my website" class="image">
+              <div class="overlay">
+                <div class="textT">You are already in my Website</div>
+              </div>
+            </div>
+            <p><a href="https://github.com/MarikaBBB/website" target="_blank" class="github-link overlay-link">
+              <img src="github-logo-png-white-github-11-icon-free-white-social-icons-256x256.png" alt="GitHub Logo" class="github-logo"> GitHub</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-sections">
+        <div class="project-container">
+          <div class="container-content">
+            <h4>Ghibli Puzzle</h4>
+            <div class="box-image">
+              <img src="./projects-images/game.jpeg" alt="Photo of a puzzle game project" class="image">
+              <div class="overlay">
+                <a href="./game/index.html">Visit the Game project</a>
+              </div>
+            </div>
+            <p><a href="https://github.com/MarikaBBB/game" target="_blank" class="github-link overlay-link">
+              <img src="github-logo-png-white-github-11-icon-free-white-social-icons-256x256.png" alt="GitHub Logo" class="github-logo"> GitHub</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-sections">
+        <div class="project-container">
+          <div class="container-content">
+            <h4>Hobby Page</h4>
+            <div class="box-image">
+              <img src="./projects-images/bookshelves.jpeg" alt="Photo of a hobby page project" class="image">
+              <div class="overlay">
+                <a href="./hobby/index.html">Visit the Hobby project</a>
+              </div>
+            </div>
+            <p><a href="https://github.com/MarikaBBB/hobby-page" target="_blank" class="github-link overlay-link">
+              <img src="github-logo-png-white-github-11-icon-free-white-social-icons-256x256.png" alt="GitHub Logo" class="github-logo"> GitHub</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-sections">
+        <div class="project-container">
+          <div class="container-content">
+            <h4>Project Gallery Page</h4>
+            <div class="box-image">
+              <img src="./projects-images/galleryProjects.jpeg" alt="Photo of a gallery projects page project" class="image">
+              <div class="overlay">
+                <a href="./gallery/index.html">Visit the Gallery project</a>
+              </div>
+            </div>
+            <p><a href="https://github.com/MarikaBBB/gallery-project" target="_blank" class="github-link overlay-link">
+              <img src="github-logo-png-white-github-11-icon-free-white-social-icons-256x256.png" alt="GitHub Logo" class="github-logo"> GitHub</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-sections">
+        <div class="project-container last-project">
+          <div class="container-content">
+            <h4>Movie Database</h4>
+            <div class="box-image">
+              <img src="./projects-images/MovieDatabase.jpeg" alt="Photo of a MovieData page project" class="image">
+              <div class="overlay">
+                <a href="./MovieData/index.html">Visit the MovieData project</a>
+              </div>
+            </div>
+            <p>
+              <a href="https://github.com/MarikaBBB/movie-database" target="_blank" class="github-link overlay-link">
+                <img src="github-logo-png-white-github-11-icon-free-white-social-icons-256x256.png" alt="GitHub Logo" class="github-logo"> GitHub</a></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-navigation">
+      <button class="prev-button">&#8249;</button>
+      <button class="next-button">&#8250;</button>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+<!-- End of Carousel Section -->
+
+ 
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2 class="titleH2">Testimonials</h2>
+    <div class="testimonial">
+      <img src="Juha.jpeg" alt="Profile Photo Juha">
+      <div class="testimonial-content">
+      <q>Marika is a creative and determined person, who is quick at learning new things and applying the information in the real world. Watching her work on her various projects has convinced me she has the analytical and aesthetic capabilities to make an excellent web developer given the right kind of guidance.</q>
+      <p>- Juha-Pekka / Head of Frontend @ MedialakeAI (flatmate)</p>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="Dace.jpeg" alt="Profile Photo Dace">
+      <div class="testimonial-content">
+        <q>It is always fun to work with Marika! Her inquisitive and open-minded nature aids in developing good bonds with people from various backgrounds. When working together on a project, Marikas strengths in task coordination and logistics are very apparent. She is a proactive problem solver who really enjoys a hands-on approach while still carefully considering every team member&rsquo;s point of view.</q>
+        <p>- Dace Kregere/ Acquisitions Senior Library Assistant @ University of Southampton</p>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="Loreta.jpeg" alt="Profile Photo Loreta">
+      <div class="testimonial-content">
+      <q>Marika is a very dedicated and determined person. Blessed with high energy levels she has been able to achieve whatever she set her mind to. Pursuing a career abroad and setting up a new life of one&rsquo;s own certainty is admirable. I can tell Marika is indeed devoted to this new coding endeavor just by hearing the enthusiasm in her voice. This opportunity would be an immense next step in Marika&rsquo;s personal development that would allow her to positively impact communities.</q>
+      <p>- Loreta Mozzato / Mother of the applicant</p>
+      </div>
+    </div>
+  </section>   
+<!-- End of Testimonials Section -->
+
+  <!-- Footer Section -->
+  <footer id="contact">
+    <div class="contact-section">
+      <h2>Contact</h2>
+    </div>
+    <div class="footer-content">
+      <div class="left-section">
+        <p class="feedback-text">Help me to improve my work.<br>Feedback are welcome. &#128522;</p>
+        <form class="feedback-form" action="mailto:bertellimarika87@gmail.com" method="post" enctype="text/plain">
+          <textarea name="feedback" placeholder="Write your feedback here" rows="8" required></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+    <p class="right-section">© Marika Bertelli 2023</p>
+  </footer>
+  <!-- End of Footer Section -->
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
