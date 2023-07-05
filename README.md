@@ -1,6 +1,6 @@
 # Repository Transition
 
-TThis is a new repository created specifically for the Founders & Coders to submit application. It does not have any commit history because the project was previously stored in a single repository along with other projects.
+This is a new repository created specifically for the Founders & Coders to submit application. It does not have any commit history because the project was previously stored in a single repository along with other projects.
 
 To access the full commit history and development progress, please refer to the https://github.com/MarikaBBB/MarikaBBB.github.io repository.
 
