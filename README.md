@@ -19,9 +19,11 @@ The portfolio is responsive and can be accessed on different devices and screen 
 
 ### Overview
 
-My portfolio is built using HTML, CSS, and JavaScript. I've designed it to have a responsive layout and have followed best practices in web development. The page includes various sections that provide information about me, my projects, testimonials, and a contact form.
+I built my portfolio using HTML, CSS, and JavaScript. It has a responsive layout and follows best practices in web development. The portfolio consists of different sections that provide information about me, my projects, testimonials, and a contact form.
 
-My motivation for this project was to inject my personality and creativity into the website, making it stand out and engaging visitors on a deeper level. I aimed to create a seamless and enjoyable user experience by incorporating smooth scrolling, animations, and hover effects to enhance the visual appeal and interactivity. Additionally, I recognized the importance of accessibility, ensuring that the design adhered to guidelines for color contrast and inclusivity. By breaking away from conventional portfolio templates and embracing creativity through the use of an avatar and interactive map, I aimed to foster curiosity and present my skills and projects in a unique and captivating way.
+The main goal of this project was to showcase my personality and creativity through the website. I wanted it to be unique and engaging for visitors. To achieve this, I added smooth scrolling, animations, and hover effects to make the website visually appealing and interactive. I also made sure to prioritize accessibility by following guidelines for color contrast and inclusivity.
+
+Instead of using traditional portfolio templates, I decided to be more creative. I used an avatar and an interactive map to make the portfolio more interesting and to spark curiosity.
 
 ### Sections
 
@@ -73,6 +75,8 @@ Here are some articles and tutorials that were particularly helpful in building 
 - Scroll-Driven Animations in CSS (https://developer.chrome.com/articles/scroll-driven-animations/)
 - Controlling CSS Animations and Transitions with JavaScript (https://css-tricks.com/controlling-css-animations-transitions-javascript/)
 - Transition Timing Function (https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)
+- Colour contrast best practice (https://webaim.org/resources/contrastchecker/) and (https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast)
+
 
 I also used WebGradients (https://webgradients.com/) as a resource for background gradients.
 

@@ -302,7 +302,6 @@ animate {
   position: absolute;
   top: 50%;
   bottom: 50%;
-  /* left: 5%; */
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
