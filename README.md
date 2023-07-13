@@ -52,8 +52,8 @@ Throughout the website, I have incorporated interactive elements like animations
 - Managing Element Layout: Aligning and positioning elements within the website layout while maintaining responsiveness was a challenge. I had to carefully consider and test the spacing and alignment to ensure consistency across different devices.
 - Styling Complex Interactive Components: The project carousel and hover boxes was quite complex for me. I had to test and address potential cross-browser compatibility issues.
 - Managing Class and ID Names: As the codebase grew longer and more complex, I encountered challenges in managing and avoiding conflicts with class and ID names. I had to review the code multiple times to maintain consistency and ensure unique names for each element to prevent unintended style clashes and JavaScript errors.
-- Organizing Styles and Selectors: As the CSS file expanded, organizing styles and selectors became a challenge. I have to structure my CSS code thoughtfully (work in progress).
-- Responsive Design: Ensuring the features work well on different screen sizes and adjusting layout accordingly. (work in progress)
+- Organizing Styles and Selectors: As the CSS file expanded, organizing styles and selectors became a challenge. I have to structure my CSS code thoughtfully.
+- Responsive Design: Ensuring the features work well on different screen sizes and adjusting layout accordingly.
 
 ### What I Learned
 While working on this code, I learned several key concepts in JavaScript and CSS, including:
